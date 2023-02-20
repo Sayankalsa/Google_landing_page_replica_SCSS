@@ -1,0 +1,42 @@
+@import './variables';
+
+
+footer {
+    background: #171717;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    color: $footer-txt;
+
+    .footer__box {
+        // padding: 2% 2%;
+
+        .location {
+            border-bottom: 1px solid #3c4043;
+            padding: .8rem;
+
+            .india {
+                padding: 15px 30px;
+                font-size: 15px;
+            }
+        }
+
+        .footer__links {
+            @extend %align-center;
+            gap: 1.5rem;
+            padding: 20px 40px;
+
+            .txt__color {
+                color: $footer-txt;
+                text-decoration: none;
+                font-size: 15px;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

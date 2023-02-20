@@ -1,0 +1,25 @@
+@import './variables';
+@import './header';
+@import './body';
+@import './footer';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: $main-color;
+}
